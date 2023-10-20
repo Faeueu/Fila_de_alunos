@@ -130,7 +130,7 @@ void removeDisciplina(Aluno &aluno, string nomeDisciplina){
         if(atual == NULL){
             cout << "Disciplina nao encontrada" << endl;
         } else {
-            if(anterior == NULL){ //Se a disciplina esta no inicio da lista
+            if(anterior == NULL){
             aluno.listaDisciplina = atual->next;
             } else {
                 anterior->next = atual->next;
@@ -180,7 +180,7 @@ void removeConteudo(Disciplina &disciplina, string nomeConteudo){
         if(atual == NULL){
             cout << "Conteudo nao encontrado" << endl;
         } else {
-            if(anterior == NULL){ //Se o conteudo esta no inicio da lista
+            if(anterior == NULL){ 
             disciplina.listaConteudos = atual->next;
             } else {
                 anterior->next = atual->next;
